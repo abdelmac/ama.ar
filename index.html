@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/css/glide.core.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/glide.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+    <link rel="icon" type="image/png" href="https://lh3.googleusercontent.com/pw/ADCreHfJisKPzUgT_u2WIvAJKue_LhhLQc8t9PvuXNPxA-fkEMqthi_U7s4L-CNpoTAZLdsYdlvtcQjnDJji8iGIlwYRu9nPte9rUrTE2K0HYOqrJQZWo5MqqCNUZJB9eyN15YxbDKneEc7xvBv0Sbo4IMM=w873-h879-s-no?authuser=0">
+    <link rel="stylesheet" href="acceuil/acceuil.css" />
+
+
+    <title>AMAREINE</title>
+  </head>
+  <body>
+
+
+        <header>
+          <nav id="navbar">
+              <div class="logotitre">
+                <img class="logo" src="https://lh3.googleusercontent.com/pw/ADCreHfJisKPzUgT_u2WIvAJKue_LhhLQc8t9PvuXNPxA-fkEMqthi_U7s4L-CNpoTAZLdsYdlvtcQjnDJji8iGIlwYRu9nPte9rUrTE2K0HYOqrJQZWo5MqqCNUZJB9eyN15YxbDKneEc7xvBv0Sbo4IMM=w873-h879-s-no?authuser=0" alt="slide1"  />
+                <a href="index.html">AMA<span>REINE</span></a>
+                <div class="nav-search">
+                  <div class="nav-search__el">
+                    <i class="las la-search"></i>
+                    <input type="text" placeholder="بحث" class="searchIput"  id="search" value="" onchange="ouvrirPage()" />
+                  </div>
+                </div>
+              </div>
+              <nav class="nav">
+                <ul class="nav-items">
+                  <li class="nav-item"><a href="index.html">Accueil</a></li>
+                  <li class="nav-item"><a href="product/product.html">Product </a></li>
+                  <li class="nav-item"><a href="network/network.html">Network </a></li>
+                  <li class="nav-item"><a href="contact/contact.html">Contact</a></li>
+                  <li class="nav-item"><select name="" id="">
+                    <option value="fr"> Français</option>
+                    <option value="ar"> Arabic</option>
+
+                  </select></li>
+                  
+
+                </ul>
+                <div class="burger-menu">&#9776;</div>
+            </nav>
+          </nav>
+          <div>
+            <section id="home">
+              <div class="left">
+                <h1 id="welcome"> The real <span>Syro-Libanees</span> bread made in France</h1>
+                <p id="description">Our wish : Keep producing the artisanal bread, like our ancestor ; with the same love, while bringin innovation.</p>
+                <p id="h1"></p><a href="#main-title">Découvrir</a></p>
+              </div>
+              <div class="right">
+                <img src="https://lh3.googleusercontent.com/pw/ADCreHfJisKPzUgT_u2WIvAJKue_LhhLQc8t9PvuXNPxA-fkEMqthi_U7s4L-CNpoTAZLdsYdlvtcQjnDJji8iGIlwYRu9nPte9rUrTE2K0HYOqrJQZWo5MqqCNUZJB9eyN15YxbDKneEc7xvBv0Sbo4IMM=w873-h879-s-no?authuser=0">
+              </div>
+            </section>
+            <section class="slider-container">
+              <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                  <ul class="glide__slides">
+                    <li class="glide__slide">
+                      <img
+                        src="https://lh3.googleusercontent.com/pw/ADCreHd4sFUvNEA1m-gufRRL-OF47ek3lzLPGC9ZOyl6EpLrG8_aEfqlSkJggaBEICRhYkvsVoo0cjX7lHMnjfX00tn74e6o2ROUl4f34OSid0T9tM5o7Gp_qGw3P6Tgf4bHuVY5_xMYDNW7BMp7oVifi0Y=w1200-h800-s-no?authuser=0"
+                        alt="slide1"
+                      />
+                      <h4>Traditional Bread </h4>
+                    </li>
+                    <li class="glide__slide">
+                      <img
+                        src="https://lh3.googleusercontent.com/pw/ADCreHdBWDwSAf15pZQYc9efTNZw5zs9-gHntAjULkNysTKJ5UoOdxAu2rvodN_P8IXoBjbEB9ZrfnJ4_zTSd7zI0BW5pgj-5QatMqveTPErpGsxLtd2QgUGTR32UwfIJVYbvN7jIlYVAzetAE4BkvL7bII=w586-h879-s-no?authuser=0"
+                        alt="slide1"
+                      />
+                      <h4>Special Bread </h4>
+                    </li>
+                    <li class="glide__slide">
+                      <img
+                        src="https://lh3.googleusercontent.com/pw/ADCreHcy2z5U2ALeWV2ct3rmgm_Rp4FcfHYBxU5UC6zDaygabPMFI4WWNHQkya49HqcFd6CASUdQt9aoZ4voprwraj6n0IpBoSJaYWd4yYd7o7lapjx9Gt_riZ7X64S-vM2YU-anHTwxER_EOcMMzwv1UBw=w659-h879-s-no?authuser=0"
+                        alt="slide1"
+                      />
+                      <h4>Pastries</h4>
+                    </li>
+                    <li class="glide__slide">
+                      <img
+                        src="https://lh3.googleusercontent.com/pw/ADCreHer8qB6Qq3OHZTmCt6YNchlSUmhZfMwUM8IxCHlx4obbwKHeyo2h-OMqgoAS1DOzirTUGHBSPDxNpedPB1qfb9QoL7anUQgG9A2EfXpGzdj5NBMgRJnTpcHg6Z9b4UM461Wj3yxhEfhgZARClmN8lY=w1544-h879-s-no?authuser=0"
+                        alt="slide1"
+                      />
+                      <h4>Traditional Pastries</h4>
+                    </li>
+                    <li class="glide__slide">
+                      <img
+                        src="https://lh3.googleusercontent.com/pw/ADCreHdFqB1UtTk_wbA--tQAoZARwKLUVZ3Z8hsbl2n6oWvFK6Z3xxtPjpCTWSNDqF4Gw71RUSoFAwi9mIAQS73AtFDYzMizDmFDeJsd4lCfNLszAUmrrUQWFOkKD94G4bzvkhSrN7-ETgSy0yK8hoHJpc4=w693-h879-s-no?authuser=0"
+                        alt="slide1"
+                      />
+                      <h4>Traditional Recipe</h4>
+                    </li>
+                    <li class="glide__slide">
+                      <img
+                        src="https://lh3.googleusercontent.com/pw/ADCreHcIf9CnMex_5pq0-ISYAaVgIZFoJEGb0gf-QGArmxWWJ4MCIHExcYhwSgBJPTjtC-zMHV7d1-Z_qRSWO1A1d518CddWKpdYkeXoIPVtQ36iT1gTzzWWCJ4H5rPWwUyM-dcrEGq7tPCRMwuvrFqCX7I=w659-h879-s-no?authuser=0"
+                        alt="slide1"
+                      />
+                      <h4>Bread cultur</h4>
+                    </li>
+
+
+
+
+                  </ul>
+                </div>
+
+                <div class="glide__arrows" data-glide-el="controls">
+                  <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                    <i class="las la-arrow-left"></i>
+                  </button>
+                  <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                    <i class="las la-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </section>
+
+
+  <!--          <section class="slider-container2">
+              <div class="glide2">
+                <div class="glide__track" data-glide-el="track">
+                  <ul class="glide__slides2">
+                    <li class="glide__slide">
+                      <img
+                        src="https://lh3.googleusercontent.com/pw/ADCreHd4sFUvNEA1m-gufRRL-OF47ek3lzLPGC9ZOyl6EpLrG8_aEfqlSkJggaBEICRhYkvsVoo0cjX7lHMnjfX00tn74e6o2ROUl4f34OSid0T9tM5o7Gp_qGw3P6Tgf4bHuVY5_xMYDNW7BMp7oVifi0Y=w1200-h800-s-no?authuser=0"
+                        alt="slide1"
+                      />
+                      <h4>Pains Traditionnels </h4>
+                    </li>
+                    <li class="glide__slide">
+                      <img
+                        src="https://lh3.googleusercontent.com/pw/ADCreHdBWDwSAf15pZQYc9efTNZw5zs9-gHntAjULkNysTKJ5UoOdxAu2rvodN_P8IXoBjbEB9ZrfnJ4_zTSd7zI0BW5pgj-5QatMqveTPErpGsxLtd2QgUGTR32UwfIJVYbvN7jIlYVAzetAE4BkvL7bII=w586-h879-s-no?authuser=0"
+                        alt="slide1"
+                      />
+                      <h4>Pain Spéciaux </h4>
+                    </li>
+                    <li class="glide__slide">
+                      <img
+                        src="https://lh3.googleusercontent.com/pw/ADCreHcy2z5U2ALeWV2ct3rmgm_Rp4FcfHYBxU5UC6zDaygabPMFI4WWNHQkya49HqcFd6CASUdQt9aoZ4voprwraj6n0IpBoSJaYWd4yYd7o7lapjx9Gt_riZ7X64S-vM2YU-anHTwxER_EOcMMzwv1UBw=w659-h879-s-no?authuser=0"
+                        alt="slide1"
+                      />
+                      <h4>Viennoiserie</h4>
+                    </li>
+                    <li class="glide__slide">
+                      <img
+                        src="https://lh3.googleusercontent.com/pw/ADCreHer8qB6Qq3OHZTmCt6YNchlSUmhZfMwUM8IxCHlx4obbwKHeyo2h-OMqgoAS1DOzirTUGHBSPDxNpedPB1qfb9QoL7anUQgG9A2EfXpGzdj5NBMgRJnTpcHg6Z9b4UM461Wj3yxhEfhgZARClmN8lY=w1544-h879-s-no?authuser=0"
+                        alt="slide1"
+                      />
+                      <h4>Pâtisserie Traditionelles</h4>
+                    </li>
+                    <li class="glide__slide">
+                      <img
+                        src="https://lh3.googleusercontent.com/pw/ADCreHdFqB1UtTk_wbA--tQAoZARwKLUVZ3Z8hsbl2n6oWvFK6Z3xxtPjpCTWSNDqF4Gw71RUSoFAwi9mIAQS73AtFDYzMizDmFDeJsd4lCfNLszAUmrrUQWFOkKD94G4bzvkhSrN7-ETgSy0yK8hoHJpc4=w693-h879-s-no?authuser=0"
+                        alt="slide1"
+                      />
+                      <h4>Recettes Traditionelles</h4>
+                    </li>
+                    <li class="glide__slide">
+                      <img
+                        src="https://lh3.googleusercontent.com/pw/ADCreHcIf9CnMex_5pq0-ISYAaVgIZFoJEGb0gf-QGArmxWWJ4MCIHExcYhwSgBJPTjtC-zMHV7d1-Z_qRSWO1A1d518CddWKpdYkeXoIPVtQ36iT1gTzzWWCJ4H5rPWwUyM-dcrEGq7tPCRMwuvrFqCX7I=w659-h879-s-no?authuser=0"
+                        alt="slide1"
+                      />
+                      <h4>Culture du Pain</h4>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="glide__arrows" data-glide-el="controls">
+                  <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                    <i class="las la-arrow-left"></i>
+                  </button>
+                  <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                    <i class="las la-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </section> -->
+
+
+
+          </div>
+        </header>
+
+        <main class="main">
+          <h1 class="main-title" id="main-title"> Our work</h1>
+          <section class="main-section">
+            <div class="article" id="article1">
+              <div class="article-image">
+                <img
+                  src="https://lh3.googleusercontent.com/pw/ADCreHczxHijgwpdgAfL2HEW-GMCBrmR214faGygDo4elzeQrJAr5gVOcpk9GRV39aptx84N4VqVMYWaZrLa33nfE6Gs2yBv21CYQjVkaoYk0vW7bQkZWuhpFM8DmQEXnLxjRJ6BHGwgW3cPlAX8irMwi8c=w600-h400-s-no?authuser=0"
+                  alt=""
+                />
+              </div>
+              <div class="article-text">
+                <h2> Artisanal bread</h2>
+                <p>
+                  Explorez l'authenticité du pain syro-libanais, une tradition riche en saveurs et en histoire. Plongez dans l'art culinaire de la Syrie et du Liban, où chaque bouchée est une célébration de la culture et du savoir-faire.
+                </p>
+                <button class="article-seeMore">voir details</button>
+                <div class="comments">
+                  <div><span></span></div>
+                  <div class="share">
+                    <p></p>
+                    <span> </span>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="article" id="article2">
+              <div class="article-text">
+                <h2> High qualitiy Bread</h2>
+                <p>
+                  Explorez nos recettes traditionnelles transmises de génération en génération. Apprenez à préparer le délicieux mana'eesh, à garnir le pain pita de vos ingrédients préférés et à créer d'autres chefs-d'œuvre de la cuisine syro-libanaise. Partagez ces saveurs avec votre famille et vos amis pour une expérience culinaire authentique.
+                </p>
+                <button class="article-seeMore">voir details</button>
+                <div class="comments">
+                  <div> <span></span></div>
+                  <div class="share">
+                    <p></p>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="article-image">
+                <img
+                  src="https://lh3.googleusercontent.com/pw/ADCreHcBMlIy-rsfyShJTg8jLO4FLc-yhtKSYWtgeuZFGRS7_mbdj3HW1nl6vXp4K8cAbvtvuVmPZ_5p7YAqsJFV3BwMtAkIkgZRhnjKg1vHDBh1UqR7fM3HOtSSe1ozgdyFkX82tApJ8D3-L-RnUZpjYnA=w640-h661-s-no?authuser=0"
+                  alt=""
+
+                />
+              </div>
+            </div>
+            <div class="article-footer-1">
+              <div class="article-image__footer-1">
+                <img
+                  src="https://lh3.googleusercontent.com/pw/ADCreHcIf9CnMex_5pq0-ISYAaVgIZFoJEGb0gf-QGArmxWWJ4MCIHExcYhwSgBJPTjtC-zMHV7d1-Z_qRSWO1A1d518CddWKpdYkeXoIPVtQ36iT1gTzzWWCJ4H5rPWwUyM-dcrEGq7tPCRMwuvrFqCX7I=w659-h879-s-no?authuser=0"
+                  alt=""
+                />
+              </div>
+              <div class="article-text__footer-1">
+                <h2>plat </h2>
+                <p>
+                  Explorez nos recettes traditionnelles transmises de génération
+                   en génération. Apprenez à préparer le délicieux mana'eesh,
+                   à garnir le pain pita de vos ingrédients préférés et à créer d'autres
+                   chefs-d'œuvre de la cuisine syro-libanaise. Partagez ces saveurs avec
+                   votre famille et vos amis pour une expérience culinaire authentique.
+                </p>
+                <button class="article-seeMore">voir details</button>
+                <div class="comments">
+                  <div><span></span></div>
+                  <div class="share">
+                    <p></p>
+                    <span> </span>
+                    <span> </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="article-footer-2">
+              <div class="article-image__footer-2">
+                <img
+                  src="https://lh3.googleusercontent.com/pw/ADCreHfrPpjilINaGzNb8C5D_Bn7tJd43DdMZS_OiNifidHVD0rnM2z-mpKIy3AiKvY2NPqAN_aTFivVuncSvXh3HwptzbZybioMvCnTsh8jJ5Br4lWt7Mhr4RN2gj0BWCMDfN3LAE34v51Ba6FWgtdsSQ8=w660-h660-s-no?authuser=0"
+                  alt=""
+                />
+              </div>
+              <div class="article-text__footer-2">
+                <h2> recette</h2>
+                <p>
+                  Chez <span>Amareine </span>, notre engagement va au-delà de
+                  la création de pains exceptionnels. Nous nous efforçons de soutenir
+                  des pratiques durables, de promouvoir la communauté locale et de
+                  préserver les traditions culinaires. Découvrez notre mission et notre
+                  vision pour un avenir où le pain syro-libanais continue d'émerveiller
+                  les papilles.
+                </p>
+                <button class="article-seeMore">voir details</button>
+                <div class="comments">
+                  <div> <span></span></div>
+                  <div class="share">
+                    <p></p>
+                    <span> </span>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="SideBar">
+              <div class="SideBar-newletter">
+                <div class="newletter-action">
+
+                </div>
+              </div>
+              <div class="recent">
+                <h1>quelques chiffres</h1>
+                <div>
+                  <ul class="recent__items">
+                    <li class="recent__item">
+                      <img
+                        src="https://lh3.googleusercontent.com/pw/ADCreHdeKN-EuMEIfO-55UnIx8UJ7o0VlZZWsL31Dn-j5pYHt6XgBQGW4ii20s38zjRUWzoPebcyFNileFxIcNMVUrS6fC8o-KpN2z_U_Xy2p-0OAIW8ie_ezEjjSXYU8OdvB_yCNK6E4ym2Vrif2UAwMsI=w960-h720-s-no?authuser=0"
+                        alt="slide1"
+                      />
+                      <h4>+10 000 Pains par Heure</h4>
+                    </li>
+
+
+                    <li class="recent__item">
+                      <img
+                        src="https://lh3.googleusercontent.com/pw/ADCreHev06-7VPeWeV9lLHv5VbXFJjWN-grjCPuGo6ySlceliMG9PKlXYCTaH1lT_kQfnDgCCqSXLm2YCMXHNaGy3WktcXpLrx7KefDr87Rab5rLauGKH6pYwgOCdf9q787B5D2Q6XnAl2YS6gbeTJwXEf4=w659-h879-s-no?authuser=0"
+                        alt="slide1"
+                      />
+                      <h4></h4>
+                    </li>
+                    <li class="recent__item">
+                      <img
+                        src="https://lh3.googleusercontent.com/pw/ADCreHeNc4rgvcyza5AYnTHlZomxtcbXOSMK84ooDA6JWfL0tz1clezGwC7dE0rmoZW4B_1CtQmM_kgQ7YrnJw_4eEVd00ID0RlHP4x7Ruyz8Yq_guj4GcNj86eE80OjmDzrJ1j52SS5KAcCvShBbzCXnLk2=w470-h323-s-no?authuser=0"
+                        alt="slide1"
+                      />
+                      <h4> Dans l'Europe de L'Est</h4>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="sidebar-social-media">
+                <div class="sidebar-social-media__content">
+                  <h3>Suivez nous</h3>
+                  <div class="sidebar-social-media__content_icon">
+                    <span><a href="https://twitter.com/Amareine_europe" target="_blank"> <i class="lab la-twitter"></i> </a> </span>
+                    <span><a href="https://www.instagram.com/amarein.europe/" target="_blank"> <i class="lab la-instagram"></i> </a> </span>
+                    <span><a href="https://www.facebook.com/profile.php?id=61553700205864" target="_blank"> <i class="lab la-facebook-f"></i> </a> </span>
+                    <span><a href="https://www.linkedin.com/company/98993047/admin/feed/posts/" target="_blank"> <i class="lab la-linkedin-in"></i> </a> </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <div class="net-title"> <a href="network/network.html"> <h3> NOTRE RESAUX </h3> </a></div>
+
+        <div id="map" ></div>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+
+        <!-- section choix produit alimentaire -->
+
+          <section id="cars">
+            <h1 class="section_title"><a href="product/product.html"> <u>AU CHOIX</u> </a></h1>
+            <div class="images">
+            <ul>
+                <li class="car">
+                   <div>
+                       <img src="https://lh3.googleusercontent.com/pw/ADCreHdDEF2j8uTVuKNfoavbp_J80ZclTqhchQ6KIq3d8omj0KiNyoGAdtknPmhQWT0E5Tx6DhvqIEQX7_nqI2OHwGvm7w2PXdAp42aWOcjnBiPW6MTVOsew9VFcdF2AVdzF8MBB5WrAXQ0o-rbEZuyHZSg=w1419-h879-s-no?authuser=0" alt="">
+                   </div>
+                   <span>Pain alepin </span>
+                   <span class="prix"></span>
+                   <a href="search/painalepin.html">VOIR </a>
+                </li>
+                <li class="car">
+                    <div>
+                        <img src="https://lh3.googleusercontent.com/pw/ADCreHdeKN-EuMEIfO-55UnIx8UJ7o0VlZZWsL31Dn-j5pYHt6XgBQGW4ii20s38zjRUWzoPebcyFNileFxIcNMVUrS6fC8o-KpN2z_U_Xy2p-0OAIW8ie_ezEjjSXYU8OdvB_yCNK6E4ym2Vrif2UAwMsI=w960-h720-s-no?authuser=0" alt="">
+                    </div>
+                    <span>Pain d'orge</span>
+                    <span class="prix"></span>
+                    <a href="search/paindorge.html">VOIR </a>
+                 </li>
+                 <li class="car">
+                    <div>
+                        <img src="https://images.pexels.com/photos/1839752/pexels-photo-1839752.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                    </div>
+                    <span> Croissant</span>
+                    <span class="prix"></span>
+                    <a href="search/croissant.html">VOIR </a>
+                 </li>
+                 <li class="car">
+                    <div>
+                        <img src="https://lh3.googleusercontent.com/pw/ADCreHfkUgYFb4p5XSafJPnk2wrfuwZwJTNIQtc1ss0QlwsrAwaBRe9iRM21eNwUotCooQYuN0muB1wSkiclrsQ6wk6yQqeneoXX542nempOAej2H_cuGUsmP3tJN3S_w3qfwbd-r8LDsiAw3IlZ1nzdQYbB=w200-h200-s-no?authuser=0" alt="">
+                    </div>
+                    <span> Kaak</span>
+                    <span class="prix"></span>
+                    <a href="search/kaak.html">VOIR </a>
+                 </li>
+                 <li class="car">
+                    <div>
+                        <img src="https://lh3.googleusercontent.com/pw/ADCreHf0S8HatkfXbgtqLHCxC39axYyC17RWZYs_RQp4ST_RaRqBGhK43tkENdJv56WUSeSPq4oSfqTB9uOw74Kl0YTgkK3NVkqnJolnTTirMznB-3sWg0dx31EmNAjn2uhNfs7xOeVfW3FrMSgTMyQHdTWF=w720-h674-s-no?authuser=0" alt="">
+                    </div>
+                    <span>Maamoul </span>
+                    <span class="prix"></span>
+                    <a href="search/mamoul.html">VOIR </a>
+                 </li>
+                 <li class="car">
+                    <div>
+                        <img src="https://lh3.googleusercontent.com/pw/ADCreHeq2phti0U8fOyptjOP6WenKPGNkD42rxZTBmX3Gj9gqPRbEoFFCgO03ke1lbL9HupyuQjny8F0pP00LFgVJjBMGjAmCSysqSnR-X3t68PdUjec18qs0mVISlt1wc56JNHcbeiz0dsPlNDcqDw3Kd0p=w953-h750-s-no?authuser=0" alt="">
+                    </div>
+                    <span>Pain hamburger</span>
+                    <span class="prix"></span>
+                    <a href="search/burger.html">VOIR </a>
+                 </li>
+            </ul>
+          </div>
+        </section>
+
+
+      <!-- section services -->
+
+     <section id="services">
+          <h1 class="section_title"></h1>
+          <div class="list_services">
+              <div class="service">
+                  <i class="fas fa-lightbulb"> </i>
+                  <h2>INNOVATION</h2>
+                  <h4>Notre entreprise est guidée par la valeur fondamentale de l'innovation. Nous croyons en la puissance de la créativité et de la pensée novatrice pour inspirer le changement. Nous nous engageons à repousser les limites, à remettre en question le statu quo et à créer des solutions innovantes qui répondent aux besoins changeants de nos clients. Chez Amareine, nous considérons chaque défi comme une opportunité d'innover et de faire progresser notre industrie.</h4>
+                   <a href="#" class="read_more">Lire Plus</a>
+              </div>
+              <div class="service">
+                  <i class="">&#10004;</i>
+                  <h2>INTEGRITE</h2>
+                  <h4>L'intégrité est au cœur de tout ce que nous faisons. Chez Amareine, nous croyons en la transparence, l'éthique et la responsabilité. Nous nous engageons à maintenir des normes élevées de conduite professionnelle, à traiter nos partenaires, clients et employés avec respect et équité. Notre succès repose sur la confiance que nous établissons avec toutes les parties prenantes, et c'est pourquoi l'intégrité est une valeur non négociable dans notre entreprise.</h4>
+                   <a href="#" class="read_more">Lire Plus</a>
+              </div>
+              <div class="service">
+                  <i class="fas fa-handshake"></i>
+                  <h2>COLLABORATION</h2>
+                  <h4>La collaboration est la clé de notre succès chez Amareine. Nous reconnaissons que les meilleures idées émergent lorsqu'une équipe diversifiée travaille ensemble de manière harmonieuse. Nous encourageons un environnement où chaque voix est entendue, où la communication est ouverte et où la collaboration est favorisée. Chez Amareine, nous sommes convaincus que travailler ensemble, en tant qu'équipe unie, permet d'atteindre des objectifs plus grands que ce que nous pourrions accomplir individuellement. Nous croyons en la force de la collaboration pour stimuler l'innovation et atteindre l'excellence.</h4>
+                   <a href="#" class="read_more">Lire Plus</a>
+              </div>
+            </div>
+        </section>
+
+
+      <!-- section contact -->
+
+        <section id="contact">
+          <h1 class="section_title"></h1>
+          <div class="localisation_contact_div">
+              <div class="localisation">
+                  <h3>Notre Adresse</h3>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d653.4558627894828!2d6.690079593812693!3d49.07099049369847!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1699447424146!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
+
+              <div class="form_contact">
+                  <h3>Envoyer un message</h3>
+                  
+                  <form action="https://formspree.io/f/xqkrbyba" method="POST">
+                      <input type="text" name="Name" id="name "placeholder="Full Name" required>
+                      <input type="email" name="Email" id="email" placeholder="Email" required>
+                      <input type="text" name="phone" id="phone" placeholder="phone no." >
+                      <select  name="country">
+                        <option value="Albanie">Albanie</option>
+                        <option value="Allemagne">Allemagne</option>
+                        <option value="Andorre">Andorre</option>
+                        <option value="Autriche">Autriche</option>
+                        <option value="Biélorussie">Biélorussie</option>
+                        <option value="Belgique">Belgique</option>
+                        <option value="Bosnie-Herzégovine">Bosnie-Herzégovine</option>
+                        <option value="Bulgarie">Bulgarie</option>
+                        <option value="Croatie">Croatie</option>
+                        <option value="Chypre">Chypre</option>
+                        <option value="Danemark">Danemark</option>
+                        <option value="Espagne">Espagne</option>
+                        <option value="Estonie">Estonie</option>
+                        <option value="Finlande">Finlande</option>
+                        <option value="France">France</option>
+                        <option value="Grèce">Grèce</option>
+                        <option value="Hongrie">Hongrie</option>
+                        <option value="Islande">Islande</option>
+                        <option value="Irlande">Irlande</option>
+                        <option value="Italie">Italie</option>
+                        <option value="Lettonie">Lettonie</option>
+                        <option value="Liechtenstein">Liechtenstein</option>
+                        <option value="Lituanie">Lituanie</option>
+                        <option value="Luxembourg">Luxembourg</option>
+                        <option value="Macédoine du Nord">Macédoine du Nord</option>
+                        <option value="Malte">Malte</option>
+                        <option value="Moldavie">Moldavie</option>
+                        <option value="Monaco">Monaco</option>
+                        <option value="Monténégro">Monténégro</option>
+                        <option value="Norvège">Norvège</option>
+                        <option value="Pays-Bas">Pays-Bas</option>
+                        <option value="Pologne">Pologne</option>
+                        <option value="Portugal">Portugal</option>
+                        <option value="République tchèque">République tchèque</option>
+                        <option value="Roumanie">Roumanie</option>
+                        <option value="Royaume-Uni">Royaume-Uni</option>
+                        <option value="Russie">Russie</option>
+                        <option value="Saint-Marin">Saint-Marin</option>
+                        <option value="Serbie">Serbie</option>
+                        <option value="Slovaquie">Slovaquie</option>
+                        <option value="Slovénie">Slovénie</option>
+                        <option value="Suède">Suède</option>
+                        <option value="Suisse">Suisse</option>
+                        <option value="Ukraine">Ukraine</option>
+                        <option value="Vatican">Vatican</option>
+                      </select>
+                    
+                      <textarea name="Message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                      <button class="submit" type="submit"> Envoyer </button>
+                  </form>
+              </div>
+              <script src="https://smtpjs.com/v3/smtp.js" >  </script>
+              <script src="acceuil/acceuil.js"></script>
+          </div>
+        </section>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+          function sendEmail(){
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "jaxouill@gmail.com",
+                Password : "",
+                To : 'abdel595et@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "New Contact Form Enquiry",
+                Body : "Name: " + document.getElementById("name").value,
+            }).then(
+              message => alert(message)
+            );
+          }
+        </script>
+        <footer>
+
+
+            <div class="servicesi">
+
+                <div class="service">
+                    <h3>réseaux sociaux</h3>
+                    <div class="sidebar-social-media">
+                      <div class="sidebar-social-media__content">
+                        <div class="sidebar-social-media__content_icon">
+                          <span><a href="https://twitter.com/Amareine_europe" target="_blank"> <i class="lab la-twitter"></i> </a> </span>
+                          <span><a href="https://www.instagram.com/amarein.europe/" target="_blank"> <i class="lab la-instagram"></i> </a> </span>
+                          <span><a href="https://www.facebook.com/profile.php?id=61553700205864" target="_blank"> <i class="lab la-facebook-f"></i> </a> </span>
+                          <span><a href="https://www.linkedin.com/company/98993047/admin/feed/posts/" target="_blank"> <i class="lab la-linkedin-in"></i> </a> </span>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="service">
+                    <h3>Media</h3>
+                    <div class="sidebar-social-media">
+                      <div class="sidebar-social-media__content">
+                        <div class="sidebar-social-media__content_icon">
+                          <p></p>
+                          <span> <a href="media/media.html" target="_blank"> <i class="fas fa-camera"></i>  </a> </span>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="service">
+                  <h3>Société</h3>
+                  <div class="sidebar-social-media">
+                    <div class="sidebar-social-media__content">
+                      <div class="sidebar-social-media__content_icon">
+                        <p></p>
+                        <span> <a href="https://www.societe.com/societe/amareine-890235344.html" target="_blank"> <i class="fas fa-suitcase"></i> </a> </span>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            </div>
+              <h3>Contact : +33 3 57 85 02 34 | &copy; 2023 SAS Amareine </h3>
+              <h3>amareine.europe@gmail.com<h3>
+                <h4>12 Rue du Stade, 57730 Folschviller<h4>
+              <h4>all rights reserved 2023<h4>
+
+          </footer>
+  </body>
+</html>
