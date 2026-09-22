@@ -4,7 +4,7 @@ import { dictionaries, productImages, type Locale } from '@/lib/i18n';
 import type { Dictionary } from '@/lib/fr';
 
 export function ProductCard({product, lang}: {product: Dictionary['products'][number]; lang: Locale}) {
-  return <Link className="product-card" href={`/${lang}/products/${product.id}/`}><div className="product-image"><img src={`/images/${productImages[product.id]}.webp`} alt={product.name} loading="lazy" width="600" height="480"/><span className="product-arrow"><ArrowUpRight size={22} aria-hidden="true"/></span></div><div className="product-copy"><span className="eyebrow">{product.tag}</span><h3>{product.name}</h3><p>{product.description}</p></div></Link>;
+  return <Link className="product-card" href={`/${lang}/products/${product.id}/`}><div className="product-image"><img src={`/images/${productImages[product.id]}`} alt={product.name} loading="lazy" width="600" height="480"/><span className="product-arrow"><ArrowUpRight size={22} aria-hidden="true"/></span></div><div className="product-copy"><span className="eyebrow">{product.tag}</span><h3>{product.name}</h3><p>{product.description}</p></div></Link>;
 }
 
 export function Hero({lang}: {lang: Locale}) {

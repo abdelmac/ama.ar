@@ -23,5 +23,5 @@ export function localizedMetadata(lang: Locale, path = '', title?: string, descr
   };
 }
 export const productImages: Record<string, string> = {
-  'pain-alepin': 'pita', 'pain-orge': 'bread-basket', kaak: 'sesame', maamoul: 'maamoul', croissant: 'croissant', 'pain-sandwich': 'sandwich',
+  'pain-alepin': 'pita.webp', 'pain-orge': 'bread-basket.webp', kaak: 'sesame.svg', maamoul: 'maamoul.webp', croissant: 'croissant.svg', 'pain-sandwich': 'sandwich.svg',
 };
