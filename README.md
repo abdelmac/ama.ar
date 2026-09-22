@@ -26,7 +26,15 @@ npm run package:hosting
 
 Sous Windows PowerShell, utiliser `npm.cmd` si l’exécution de `npm.ps1` est bloquée. Les archives et fichiers de compilation sont exclus de Git.
 
-## Déploiement sur un hébergement Namecheap
+## Hébergement actuel : Sites et domaine Namecheap
+
+Le déploiement a réussi sur [amareine.abdel595et.chatgpt.site](https://amareine.abdel595et.chatgpt.site). Son accès est actuellement privé. Les domaines `amareine.com` et `www.amareine.com` sont ajoutés à Sites et attendent les réglages DNS ainsi que la validation HTTPS.
+
+Suivre le [guide Namecheap avec les sept enregistrements exacts](docs/NAMECHEAP-DNS.md) pour raccorder le domaine. Namecheap reste le fournisseur du domaine ; Sites héberge le site. Aucun hébergement cPanel n’est nécessaire pour cette configuration. Le raccordement DNS ne rend pas le site public : le choix de visibilité se règle séparément dans Sites.
+
+L’identité de l’hébergement est conservée dans `.openai/hosting.json`. Pour une mise à jour, reconstruire et vérifier le site, pousser la version source correspondante, puis enregistrer et déployer cette version dans Sites en conservant le même projet.
+
+## Autre possibilité : hébergement Namecheap avec cPanel
 
 `npm run build` génère `out/`, un accueil qui mène vers `/fr/`, et un `.htaccess` avec les redirections des anciennes adresses HTML et les en-têtes de sécurité. `npm run package:hosting` prépare `dist/amareine-namecheap.zip` ; l’archive contient uniquement le site exporté, y compris `.htaccess`.
 
