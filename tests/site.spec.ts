@@ -40,6 +40,9 @@ test('language selection preserves the product, query string and fragment', asyn
   await expect(page).toHaveURL('http://127.0.0.1:3000/fr/');
   await page.goto('/fr/products/pain-alepin/?ref=qa#main');
   for (const lang of ['ar', 'de', 'en', 'fr']) {
+    // The server-rendered select is visible before React attaches its handler.
+    // Next mounts the route announcer after hydration completes.
+    await page.locator('next-route-announcer').waitFor({ state: 'attached' });
     await page.locator('header select').selectOption(lang);
     await expect(page).toHaveURL(`http://127.0.0.1:3000/${lang}/products/pain-alepin/?ref=qa#main`);
     await expect(page.locator('html')).toHaveAttribute('lang', lang);
