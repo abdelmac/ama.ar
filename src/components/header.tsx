@@ -18,7 +18,7 @@ export function Header({ lang }: { lang: Locale }) {
     <div className="announcement"><span className="tiny-star">✳</span>{d.announcement}<span className="tiny-star">✳</span></div>
     <header className="site-header">
       <div className="header-inner container">
-        <Link href={`/${lang}/`} className="brand" aria-label={`Amareine — ${d.nav.home}`}><img src="/images/logo.webp" width="53" height="53" alt="" /><span>AMAREINE<small>LE GOÛT DU PARTAGE</small></span></Link>
+        <Link href={`/${lang}/`} className="brand" aria-label={`Amareine — ${d.nav.home}`}><img src="/images/logo.webp" width="53" height="53" alt="" /><span>AMAREINE<small>{d.footer.signature}</small></span></Link>
         <nav className={`main-nav ${open ? 'is-open' : ''}`} id="main-navigation" aria-label={d.nav.open}>
           {items.map(([path, label]) => <Link onClick={() => setOpen(false)} aria-current={pathname === `/${lang}/${path}` || (path && pathname.startsWith(`/${lang}/${path}`)) ? 'page' : undefined} key={path} href={`/${lang}/${path}`}>{label}</Link>)}
           <Link className="mobile-contact" onClick={() => setOpen(false)} href={`/${lang}/contact/`}>{d.nav.contact}</Link>
