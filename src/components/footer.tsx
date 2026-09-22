@@ -1,0 +1,8 @@
+import Link from 'next/link';
+import { ArrowUpRight, Instagram, Facebook } from 'lucide-react';
+import { business, dictionaries, languageNames, locales, type Locale } from '@/lib/i18n';
+
+export function Footer({lang}: {lang: Locale}) {
+  const d = dictionaries[lang];
+  return <footer className="site-footer"><div className="container footer-main"><div className="footer-brand"><Link className="brand" href={`/${lang}/`}><img src="/images/logo.webp" width="60" height="60" alt="" /><span>AMAREINE</span></Link><p>{d.footer.description}</p><div className="social-links"><a href={business.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram"><Instagram size={20}/></a><a href={business.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook"><Facebook size={20}/></a></div></div><div><h2>{d.footer.explore}</h2><Link href={`/${lang}/products/`}>{d.nav.products}</Link><Link href={`/${lang}/story/`}>{d.nav.story}</Link><Link href={`/${lang}/professionals/`}>{d.nav.professionals}</Link><Link href={`/${lang}/contact/`}>{d.nav.contact}</Link></div><div><h2>{d.footer.follow}</h2><a dir="ltr" href={`tel:${business.tel}`}>{business.phone}</a><a href={`mailto:${business.email}`}>{business.email}<ArrowUpRight size={14}/></a><p>12 Rue du Stade<br/>57730 {d.footer.location}</p></div></div><div className="container footer-bottom"><p>© {new Date().getFullYear()} Amareine. {d.footer.rights}</p><Link href={`/${lang}/privacy/`}>{d.footer.privacy}</Link><div className="footer-languages">{locales.map(locale => <Link lang={locale} key={locale} href={`/${locale}/`} aria-current={lang === locale ? 'page' : undefined}>{languageNames[locale]}</Link>)}</div></div></footer>;
+}
