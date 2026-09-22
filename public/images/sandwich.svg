@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="480" viewBox="0 0 600 480" fill="none">
+  <defs>
+    <linearGradient id="background" x1="95" y1="42" x2="515" y2="442" gradientUnits="userSpaceOnUse"><stop stop-color="#FCF8F0"/><stop offset="1" stop-color="#EFE5D4"/></linearGradient>
+    <linearGradient id="crust" x1="287" y1="148" x2="325" y2="343" gradientUnits="userSpaceOnUse"><stop stop-color="#F0BD67"/><stop offset=".32" stop-color="#E4A344"/><stop offset=".72" stop-color="#CB822D"/><stop offset="1" stop-color="#A75C23"/></linearGradient>
+    <linearGradient id="edge" x1="279" y1="288" x2="313" y2="359" gradientUnits="userSpaceOnUse"><stop stop-color="#D99943"/><stop offset=".44" stop-color="#EDC178"/><stop offset=".77" stop-color="#D39D50"/><stop offset="1" stop-color="#B37A35"/></linearGradient>
+    <radialGradient id="highlight" cx="0" cy="0" r="1" gradientTransform="matrix(192 28 -10 67 267 196)" gradientUnits="userSpaceOnUse"><stop stop-color="#FFE6AD" stop-opacity=".65"/><stop offset="1" stop-color="#FFE6AD" stop-opacity="0"/></radialGradient>
+    <filter id="shadow" x="68" y="290" width="479" height="142" filterUnits="userSpaceOnUse"><feGaussianBlur stdDeviation="13"/></filter>
+    <g id="seed"><ellipse rx="4.5" ry="1.8" fill="#F8E7BA"/><path d="M-2.5.5 2 .4" stroke="#B27936" stroke-opacity=".4" stroke-width=".65" stroke-linecap="round"/></g>
+  </defs>
+  <path fill="url(#background)" d="M0 0h600v480H0z"/>
+  <ellipse cx="307" cy="361" rx="213" ry="25" fill="#7B542E" opacity=".19" filter="url(#shadow)"/>
+  <g transform="rotate(-9 301 251)">
+    <path d="M97 274c0-51 41-97 119-119 69-20 154-14 217 17 44 22 71 53 73 91 3 48-38 75-97 85-55 10-135 12-201 2-68-9-112-33-111-76Z" fill="url(#edge)"/>
+    <path d="M96 267c3-51 47-95 122-113 69-18 153-15 214 16 49 24 77 57 72 93-5 40-42 61-99 72-55 11-136 11-198 1-66-10-114-31-111-69Z" fill="url(#crust)"/>
+    <path d="M102 255c15-44 52-75 116-93 65-19 143-14 205 12 37 16 61 40 73 65-31-24-98-39-176-38-96 2-165 19-218 54Z" fill="url(#highlight)"/>
+    <path d="M107 294c24 25 71 40 130 45 61 6 121 5 177-7 36-7 63-17 80-32" stroke="#91491C" stroke-opacity=".43" stroke-width="4" stroke-linecap="round"/>
+    <path d="M130 322c54 26 124 29 182 28 74-1 134-13 171-33" stroke="#F9D99D" stroke-opacity=".68" stroke-width="5" stroke-linecap="round"/>
+    <path d="M185 170c-27 18-47 46-54 78 18-19 36-37 59-48 7-13 16-25 25-34l-30 4Z" fill="#A96224" opacity=".65"/>
+    <path d="M194 171c-29 21-48 46-58 70 20-19 39-33 58-40 9-12 15-24 26-35l-26 5Z" fill="#F7D393"/>
+    <path d="M278 152c-24 13-52 39-65 72 22-18 46-30 68-34 8-14 19-28 32-38l-35 0Z" fill="#A65C1F" opacity=".66"/>
+    <path d="M284 153c-27 15-48 38-64 62 20-14 38-22 61-26 10-15 19-26 30-36h-27Z" fill="#F9DA9D"/>
+    <path d="M373 163c-28 10-54 32-69 59 22-13 48-20 70-19 12-10 23-20 36-24l-37-16Z" fill="#A65C1F" opacity=".6"/>
+    <path d="M378 166c-28 9-49 27-66 48 22-11 42-16 64-14 9-9 19-15 30-20l-28-14Z" fill="#F6D18D"/>
+    <path d="M143 272c4-5 7-8 11-10m35 29c5 3 9 4 13 4m93 21 13 1m75-37 10-4m58-29 8 5" stroke="#9F5B24" stroke-opacity=".3" stroke-width="2.5" stroke-linecap="round"/>
+    <use href="#seed" transform="translate(157 224) rotate(-32)"/><use href="#seed" transform="translate(169 209) rotate(49)"/><use href="#seed" transform="translate(155 256) rotate(74)"/><use href="#seed" transform="translate(181 250) rotate(17)"/><use href="#seed" transform="translate(200 230) rotate(-44)"/><use href="#seed" transform="translate(211 207) rotate(21)"/><use href="#seed" transform="translate(234 174) rotate(69)"/><use href="#seed" transform="translate(248 167) rotate(-27)"/>
+    <use href="#seed" transform="translate(231 244) rotate(-18)"/><use href="#seed" transform="translate(257 225) rotate(36)"/><use href="#seed" transform="translate(278 205) rotate(-61)"/><use href="#seed" transform="translate(300 178) rotate(28)"/><use href="#seed" transform="translate(326 167) rotate(71)"/><use href="#seed" transform="translate(346 178) rotate(-22)"/><use href="#seed" transform="translate(303 247) rotate(31)"/><use href="#seed" transform="translate(279 263) rotate(-24)"/>
+    <use href="#seed" transform="translate(333 237) rotate(-35)"/><use href="#seed" transform="translate(357 219) rotate(64)"/><use href="#seed" transform="translate(385 228) rotate(26)"/><use href="#seed" transform="translate(402 208) rotate(-17)"/><use href="#seed" transform="translate(425 203) rotate(61)"/><use href="#seed" transform="translate(449 225) rotate(-38)"/><use href="#seed" transform="translate(475 250) rotate(75)"/><use href="#seed" transform="translate(426 246) rotate(19)"/>
+    <use href="#seed" transform="translate(142 290) rotate(33)"/><use href="#seed" transform="translate(177 281) rotate(-26)"/><use href="#seed" transform="translate(201 305) rotate(71)"/><use href="#seed" transform="translate(219 275) rotate(18)"/><use href="#seed" transform="translate(251 296) rotate(-36)"/><use href="#seed" transform="translate(276 318) rotate(39)"/><use href="#seed" transform="translate(309 289) rotate(81)"/><use href="#seed" transform="translate(340 310) rotate(-24)"/><use href="#seed" transform="translate(362 273) rotate(28)"/><use href="#seed" transform="translate(390 302) rotate(-43)"/><use href="#seed" transform="translate(413 280) rotate(72)"/><use href="#seed" transform="translate(443 300) rotate(17)"/><use href="#seed" transform="translate(465 275) rotate(-31)"/>
+  </g>
+  <use href="#seed" transform="translate(133 368) rotate(-24)"/><use href="#seed" transform="translate(149 382) rotate(69)"/><use href="#seed" transform="translate(468 360) rotate(31)"/>
+</svg>

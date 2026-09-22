@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="480" viewBox="0 0 600 480" fill="none">
+  <defs>
+    <linearGradient id="background" x1="95" y1="42" x2="515" y2="442" gradientUnits="userSpaceOnUse"><stop stop-color="#FCF8F0"/><stop offset="1" stop-color="#EFE5D4"/></linearGradient>
+    <linearGradient id="bread" x1="275" y1="122" x2="318" y2="354" gradientUnits="userSpaceOnUse"><stop stop-color="#F1BE62"/><stop offset=".33" stop-color="#E5A442"/><stop offset=".73" stop-color="#BD6C24"/><stop offset="1" stop-color="#98501E"/></linearGradient>
+    <linearGradient id="fold" x1="289" y1="142" x2="307" y2="327" gradientUnits="userSpaceOnUse"><stop stop-color="#FFE0A0"/><stop offset=".38" stop-color="#F0B555"/><stop offset=".78" stop-color="#D99336"/><stop offset="1" stop-color="#AB5B20"/></linearGradient>
+    <linearGradient id="side" x1="400" y1="172" x2="395" y2="312" gradientUnits="userSpaceOnUse"><stop stop-color="#F3C573"/><stop offset=".47" stop-color="#DB983C"/><stop offset="1" stop-color="#B26928"/></linearGradient>
+    <filter id="shadow" x="70" y="297" width="468" height="128" filterUnits="userSpaceOnUse"><feGaussianBlur stdDeviation="13"/></filter>
+    <g id="seed"><ellipse rx="4.4" ry="1.7" fill="#F7E5B8"/><path d="m-2 .5 3.4-.2" stroke="#9F6226" stroke-opacity=".3" stroke-width=".7" stroke-linecap="round"/></g>
+  </defs>
+  <path fill="url(#background)" d="M0 0h600v480H0z"/>
+  <ellipse cx="304" cy="360" rx="208" ry="24" fill="#7B542E" opacity=".18" filter="url(#shadow)"/>
+  <g transform="rotate(-7 300 249)">
+    <path d="M130 335c-29-15-31-48-17-82 19-47 53-86 99-107 43-21 88-28 133-16 49 12 88 43 110 82 22 39 34 77 19 106-10 19-28 19-39 5l-24-34c-30 26-64 40-103 42-42 2-76-8-103-27l-19 27c-17 22-38 16-56 4Z" fill="url(#bread)"/>
+    <path d="M130 334c-16-13-16-37-10-61 9 19 24 28 42 30-1 21-10 34-22 37l-10-6Z" fill="#E4A651"/>
+    <path d="M128 287c17 4 33 2 48-7l-15 24c-14 1-28-3-39-10" stroke="#93501F" stroke-opacity=".55" stroke-width="4" stroke-linecap="round"/>
+    <path d="M151 239c13 7 33 6 53-5l-27 47c-17 8-31 8-43 4 0-12 7-31 17-46Z" fill="url(#side)"/>
+    <path d="M157 224c21-38 50-58 80-69l-15 76-19 35c-22-4-39-19-46-42Z" fill="url(#fold)"/>
+    <path d="M159 221c14 18 34 27 56 27m-69 14c14 8 27 9 42 6" stroke="#9A511B" stroke-opacity=".5" stroke-width="4" stroke-linecap="round"/>
+    <path d="M237 147c26-14 58-19 87-13-12 25-18 56-18 85 0 38 9 69 29 106-41 7-83-1-115-22-16-31-18-62-12-92 5-28 14-46 29-64Z" fill="url(#fold)"/>
+    <path d="M238 149c-20 23-32 57-32 88 0 25 5 48 17 69" stroke="#A76021" stroke-opacity=".65" stroke-width="5" stroke-linecap="round"/>
+    <path d="M251 147c-18 28-27 50-29 77" stroke="#FFF0C1" stroke-opacity=".66" stroke-width="6" stroke-linecap="round"/>
+    <path d="M263 315c-14-24-21-51-19-80 1-36 12-70 33-102 34-10 62-1 82 10-20 25-31 57-33 91-1 34 7 62 23 86-32 12-60 6-86-5Z" fill="url(#fold)"/>
+    <path d="M278 140c-18 24-29 54-32 85m22 83c-9-13-16-31-20-48" stroke="#FFE4A3" stroke-opacity=".64" stroke-width="6" stroke-linecap="round"/>
+    <path d="M349 143c26 8 48 22 64 42-6 41-2 76 10 104-17 16-42 28-67 32-20-20-29-51-30-83 0-36 8-71 23-95Z" fill="url(#side)"/>
+    <path d="M350 145c-16 27-26 58-24 88 1 36 11 64 29 85" stroke="#9E571E" stroke-opacity=".61" stroke-width="5" stroke-linecap="round"/>
+    <path d="M364 154c-15 21-23 45-24 68m5 39c4 18 11 33 20 45" stroke="#FFE0A0" stroke-opacity=".7" stroke-width="5" stroke-linecap="round"/>
+    <path d="M414 187c25 25 42 55 48 86-10 10-21 16-38 18-14-29-16-65-10-104Z" fill="url(#fold)"/>
+    <path d="M413 189c-4 35-1 65 10 95" stroke="#9C551D" stroke-opacity=".64" stroke-width="5" stroke-linecap="round"/>
+    <path d="M427 205c-1 24 1 43 8 64" stroke="#FFE5AC" stroke-opacity=".68" stroke-width="5" stroke-linecap="round"/>
+    <path d="M462 270c12 22 17 39 8 51-7 10-18 8-25-2l-18-28c15-1 25-8 35-21Z" fill="#DA963E"/>
+    <path d="M438 302c10 0 20-4 28-11" stroke="#A86224" stroke-width="4" stroke-linecap="round"/>
+    <path d="M257 304c16 7 32 10 50 8m-77-21c-7-13-11-26-12-39m122 33c4 10 8 16 13 24" stroke="#834118" stroke-opacity=".28" stroke-width="2.5" stroke-linecap="round"/>
+    <use href="#seed" transform="translate(179 205) rotate(-39)"/><use href="#seed" transform="translate(189 188) rotate(28)"/><use href="#seed" transform="translate(204 174) rotate(71)"/><use href="#seed" transform="translate(191 222) rotate(37)"/>
+    <use href="#seed" transform="translate(235 181) rotate(32)"/><use href="#seed" transform="translate(244 159) rotate(-24)"/><use href="#seed" transform="translate(226 207) rotate(-52)"/><use href="#seed" transform="translate(227 243) rotate(17)"/>
+    <use href="#seed" transform="translate(293 155) rotate(49)"/><use href="#seed" transform="translate(317 148) rotate(-12)"/><use href="#seed" transform="translate(279 177) rotate(-26)"/><use href="#seed" transform="translate(308 175) rotate(63)"/><use href="#seed" transform="translate(330 166) rotate(21)"/><use href="#seed" transform="translate(267 203) rotate(33)"/><use href="#seed" transform="translate(292 201) rotate(-48)"/><use href="#seed" transform="translate(313 221) rotate(26)"/><use href="#seed" transform="translate(276 232) rotate(76)"/><use href="#seed" transform="translate(291 255) rotate(-28)"/><use href="#seed" transform="translate(263 273) rotate(39)"/><use href="#seed" transform="translate(304 294) rotate(-17)"/>
+    <use href="#seed" transform="translate(367 179) rotate(-33)"/><use href="#seed" transform="translate(387 187) rotate(57)"/><use href="#seed" transform="translate(356 202) rotate(23)"/><use href="#seed" transform="translate(375 217) rotate(-42)"/><use href="#seed" transform="translate(360 246) rotate(71)"/><use href="#seed" transform="translate(393 255) rotate(25)"/><use href="#seed" transform="translate(379 282) rotate(-21)"/><use href="#seed" transform="translate(442 247) rotate(51)"/>
+  </g>
+  <use href="#seed" transform="translate(155 365) rotate(37)"/><use href="#seed" transform="translate(438 372) rotate(-12)"/><path d="m178 374 4 2-2 2-4-1 2-3Zm224 7 5-1 2 3-4 1-3-3Z" fill="#C89A59" opacity=".6"/>
+</svg>
