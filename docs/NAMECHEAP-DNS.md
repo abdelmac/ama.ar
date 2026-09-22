@@ -1,6 +1,10 @@
 # Raccorder amareine.com à Sites
 
-Le site est déployé sur [amareine.abdel595et.chatgpt.site](https://amareine.abdel595et.chatgpt.site), avec un accès actuellement privé. `amareine.com` et `www.amareine.com` ont été ajoutés à Sites ; leur activation et leur certificat HTTPS attendent la configuration DNS ci-dessous. Aucun abonnement d’hébergement cPanel n’est nécessaire.
+Le site est public et accessible sur [amareine.com](https://amareine.com) et [www.amareine.com](https://www.amareine.com). Les deux domaines et leurs certificats HTTPS sont actifs. La version d’hébergement reste disponible sur [amareine.abdel595et.chatgpt.site](https://amareine.abdel595et.chatgpt.site). Aucun abonnement d’hébergement cPanel n’est nécessaire.
+
+Vérification du 22 septembre 2026 à 18:28 UTC : les deux domaines répondent en HTTP 200, sans connexion. Le blocage provenait du raccordement encore en attente et de l’accès privé ; la validation des domaines a été relancée et l’accès a été ouvert au public après confirmation.
+
+Le CNAME `www` observé pointe encore vers `amareine.abdel595et.chatgpt.site`. Les deux adresses fonctionnent actuellement, mais la cible fournie par l’hébergeur pour ce CNAME est `custom-domains.chatgpt.site`, indiquée dans le tableau ci-dessous. Les deux A et les quatre TXT sont déjà conformes : inutile de les recréer.
 
 ## Réglages Namecheap
 
@@ -24,6 +28,6 @@ Saisir les champs **Host** exactement comme dans le tableau, sans ajouter `.amar
 
 Après propagation DNS, ouvrir les paramètres du site dans Sites et actualiser le statut des deux domaines. Attendre que la validation et le certificat SSL soient actifs, puis vérifier `https://amareine.com/fr/` et `https://www.amareine.com/fr/`.
 
-Le raccordement DNS et la visibilité sont deux réglages distincts : l’accès reste privé tant que le site n’a pas été autorisé à devenir public dans Sites.
+Le raccordement DNS et la visibilité sont deux réglages distincts. L’accès public a été autorisé et activé ; aucune connexion à ChatGPT n’est nécessaire pour visiter le site.
 
 Valeurs fournies par Sites le 22 septembre 2026. [Documentation officielle Namecheap : gérer les enregistrements DNS](https://www.namecheap.com/support/knowledgebase/article.aspx/434/2237/how-do-i-set-up-host-records-for-a-domain/).

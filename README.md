@@ -28,9 +28,9 @@ Sous Windows PowerShell, utiliser `npm.cmd` si l’exécution de `npm.ps1` est b
 
 ## Hébergement actuel : Sites et domaine Namecheap
 
-Le déploiement a réussi sur [amareine.abdel595et.chatgpt.site](https://amareine.abdel595et.chatgpt.site). Son accès est actuellement privé. Les domaines `amareine.com` et `www.amareine.com` sont ajoutés à Sites et attendent les réglages DNS ainsi que la validation HTTPS.
+Le site est public sur [amareine.com](https://amareine.com) et [www.amareine.com](https://www.amareine.com), avec des certificats HTTPS actifs. L’adresse de l’hébergement reste [amareine.abdel595et.chatgpt.site](https://amareine.abdel595et.chatgpt.site). Aucune connexion à ChatGPT n’est nécessaire pour visiter le site.
 
-Suivre le [guide Namecheap avec les sept enregistrements exacts](docs/NAMECHEAP-DNS.md) pour raccorder le domaine. Namecheap reste le fournisseur du domaine ; Sites héberge le site. Aucun hébergement cPanel n’est nécessaire pour cette configuration. Le raccordement DNS ne rend pas le site public : le choix de visibilité se règle séparément dans Sites.
+Le [guide Namecheap](docs/NAMECHEAP-DNS.md) conserve les sept enregistrements exacts et l’état vérifié du domaine. Namecheap reste le fournisseur du domaine ; Sites héberge le site. Aucun hébergement cPanel n’est nécessaire pour cette configuration. Le raccordement DNS et l’accès public ont été activés séparément dans Sites.
 
 L’identité de l’hébergement est conservée dans `.openai/hosting.json`. Pour une mise à jour, reconstruire et vérifier le site, pousser la version source correspondante, puis enregistrer et déployer cette version dans Sites en conservant le même projet.
 
