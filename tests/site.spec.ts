@@ -138,6 +138,9 @@ test('contact requires valid fields and consent; mocked success resets the form'
   expect(requests[0]).toContain('qa@example.invalid');
   expect(requests[0]).toContain('Devenir partenaire');
   expect(requests[0]).toContain('Pain alepin');
+  expect(requests[0]).toMatch(/name="subject"\r\n\r\nAmareine\.com\r\n/);
+  expect(requests[0].match(/name="subject"/g)).toHaveLength(1);
+  expect(requests[0]).toMatch(/name="request_type"\r\n\r\n1\r\n/);
   await expect(page.locator('input[name="Name"]')).toHaveValue('');
   await expect(page.locator('textarea[name="Message"]')).toHaveValue('');
   await expect(page.locator('input[name="consent"]')).not.toBeChecked();

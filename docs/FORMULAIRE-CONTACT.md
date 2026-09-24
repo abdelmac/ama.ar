@@ -2,6 +2,8 @@
 
 Adresse demandée : **amareine.europe@gmail.com**.
 
+Objet des notifications : **Amareine.com**, transmis à Formspree par le champ masqué `subject`. Le type de demande choisi par le visiteur est envoyé séparément (`request_type` et `subject_label`) pour ne pas remplacer l’objet du mail.
+
 Le formulaire Next.js publié utilise `https://formspree.io/f/xqkrbyba`. Son destinataire réel est enregistré dans Formspree et n’est pas déductible de cet identifiant public. Les coordonnées affichées et les liens e-mail du site utilisent déjà l’adresse demandée.
 
 ## Réglage à effectuer dans Formspree
